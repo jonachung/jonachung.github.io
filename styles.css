@@ -372,6 +372,13 @@ button { font: inherit; cursor: pointer; }
   border-top: 1px dashed var(--border);
 }
 
+/* Education sub-entries */
+.edu { padding: 10px 0; }
+.edu + .edu { border-top: 1px dashed var(--border); margin-top: 10px; }
+.edu__title { margin: 0; font-size: 15px; }
+.edu__meta  { margin: 2px 0 0; font-size: 12.5px; }
+.edu__note  { margin: 6px 0 0; font-size: 13.5px; }
+
 /* =========================================================
    Chips (tech tags)
    ========================================================= */

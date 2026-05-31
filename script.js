@@ -106,6 +106,7 @@
   const phrases = [
     "building reliable backends.",
     "obsessed with good auth & clean APIs.",
+    "software engineer padawan, constant learner, coffee enthusiast.",
     "turning brittle workflows into boring services.",
     "shipping fast, observing everything.",
   ];

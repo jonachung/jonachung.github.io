@@ -17,10 +17,11 @@ No build step. No dependencies. Deploys anywhere static (GitHub Pages, Netlify, 
 ## Sections
 
 1. **Hero** — name, role, short bio, animated rotating tagline.
-2. **About** — background, interests, education.
+2. **About** — background, interests, languages, full education timeline (UCI + West Valley + Lynbrook), notable coursework, honors.
 3. **Skills** — grouped chips (Languages, Backend, Messaging & Data, Cloud & Observability, Security, Frontend & AI, Tooling & Testing).
-4. **Work Experience** — Zoom + Amazon roles with bullets and tech tags.
-5. **Contact** — email, phone, resume download, socials, contact form.
+4. **Work Experience** — Zoom, UC Irvine OIT, Amazon, plus a compact "Earlier Roles" card (UL, UCI teaching, Dreams for Schools, Startup Wonder).
+5. **Projects** — SMS Spam Predictor, Search Engine, Simple Shell, Electric Bike.
+6. **Contact** — location, email, resume download, socials, contact form.
 
 ## Quick start
 

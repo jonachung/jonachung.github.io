@@ -105,10 +105,9 @@
   // Edit this array to customize what scrolls past your cursor.
   const phrases = [
     "building reliable backends.",
-    "obsessed with good auth & clean APIs.",
-    "software engineer padawan, constant learner, coffee enthusiast.",
-    "turning brittle workflows into boring services.",
-    "shipping fast, observing everything.",
+    "constant learner, coffee enthusiast.",
+    "happiest mid-debug with a fresh espresso.",
+    "always tinkering with something new.",
   ];
   const cursor = document.getElementById("typed-cursor");
   if (cursor && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

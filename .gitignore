@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temp
+*.log
+.cache/
+.tmp/
+node_modules/
+
+# Local server artifacts
+.python-version
+__pycache__/

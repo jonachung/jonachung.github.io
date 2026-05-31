@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jonathan Hung — Software Engineer. Backend, distributed systems, OAuth 2.0, and developer platforms." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Jonathan Hung — Software Engineer</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============== NAVIGATION ============== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Home">
+        <span class="prompt">$</span>
+        <span class="brand__name">~/jonathan-hung</span>
+        <span class="caret" aria-hidden="true"></span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about"><span class="muted">cd</span> about</a>
+        <a href="#skills"><span class="muted">cd</span> skills</a>
+        <a href="#experience"><span class="muted">cd</span> experience</a>
+        <a href="#contact"><span class="muted">cd</span> contact</a>
+        <a class="nav__cta" href="assets/resume.pdf" download>
+          <span class="muted">cat</span> resume.pdf
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============== HERO ============== -->
+    <section class="hero">
+      <div class="container">
+        <div class="window" aria-label="Terminal window">
+          <div class="window__chrome">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="window__title">— zsh — 100x32</span>
+          </div>
+          <div class="window__body">
+            <p class="line"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <h1 class="hero__name">Jonathan Hung</h1>
+            <p class="hero__role">
+              <span class="muted"># role</span>
+              <span class="string">"Software Engineer"</span>
+              <span class="muted">// backend · distributed systems · auth platforms</span>
+            </p>
+
+            <p class="line mt"><span class="prompt">$</span> <span class="cmd">cat about.txt</span></p>
+            <p class="hero__bio">
+              Software engineer with 3+ years at Zoom building high-availability backend
+              systems — most recently owning core pieces of the OAuth 2.0 platform that
+              processes 10M+ token requests a day. I like turning gnarly auth flows and
+              brittle workflows into boring, well-observed services.
+              <span class="cursor" id="typed-cursor" aria-hidden="true"></span>
+            </p>
+
+            <p class="line mt"><span class="prompt">$</span> <span class="cmd">ls --tags</span></p>
+            <div class="hero__tags">
+              <span class="tag">backend</span>
+              <span class="tag">distributed-systems</span>
+              <span class="tag">oauth-2.0</span>
+              <span class="tag">microservices</span>
+              <span class="tag">developer-platforms</span>
+              <span class="tag">ai-agents</span>
+            </div>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#experience">
+                <span class="prompt">$</span> view --experience
+              </a>
+              <a class="btn btn--ghost" href="#contact">
+                <span class="prompt">$</span> say --hello
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== ABOUT ============== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="line"><span class="prompt">$</span> <span class="cmd">cd about</span></p>
+          <h2 class="section__title"><span class="hash">##</span> About</h2>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title"><span class="keyword">const</span> background <span class="op">=</span> <span class="string">"..."</span></h3>
+            <p>
+              I'm a software engineer who's spent the last few years inside Zoom's
+              Marketplace org, designing and operating the platform pieces that other
+              engineers (and apps) depend on — OAuth 2.0, scope management, Phone APIs
+              and webhooks. I care a lot about clear contracts, good observability,
+              and making the developer experience around a backend feel as good as
+              the backend itself.
+            </p>
+            <ul class="list">
+              <li><span class="muted">→</span> Previously <span class="string">"SWE @ Zoom Video Communications"</span></li>
+              <li><span class="muted">→</span> Earlier <span class="string">"SDE Intern @ Amazon"</span></li>
+              <li><span class="muted">→</span> Served as a <span class="string">"Security Champion"</span> for Marketplace engineering</li>
+              <li><span class="muted">→</span> Currently <span class="string">"open to new opportunities"</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="keyword">interests</span> <span class="op">=</span> [</h3>
+            <ul class="list list--bullets">
+              <li><span class="string">"distributed systems &amp; high-availability backends"</span>,</li>
+              <li><span class="string">"identity, OAuth, and authorization design"</span>,</li>
+              <li><span class="string">"developer platforms &amp; internal tooling"</span>,</li>
+              <li><span class="string">"event-driven architectures"</span>,</li>
+              <li><span class="string">"LLM agents for ops &amp; debugging"</span>,</li>
+            </ul>
+            <p class="muted">]</p>
+
+            <h3 class="card__title mt"><span class="keyword">education</span> <span class="op">=</span> {</h3>
+            <ul class="list">
+              <li><span class="muted">→</span> <span class="fn">school</span>: <span class="string">"University of California, Irvine"</span></li>
+              <li><span class="muted">→</span> <span class="fn">degree</span>: <span class="string">"B.S. Computer Science"</span></li>
+            </ul>
+            <p class="muted">}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SKILLS ============== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <p class="line"><span class="prompt">$</span> <span class="cmd">cat skills.json</span></p>
+          <h2 class="section__title"><span class="hash">##</span> Skills</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Languages</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Backend</h3>
+            <div class="chips">
+              <span class="chip">REST APIs</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Microservices</span>
+              <span class="chip">Distributed Systems</span>
+              <span class="chip">Event-Driven Architecture</span>
+              <span class="chip">Maven</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Messaging &amp; Data</h3>
+            <div class="chips">
+              <span class="chip">Kafka</span>
+              <span class="chip">Pub/Sub</span>
+              <span class="chip">Amazon SNS</span>
+              <span class="chip">MySQL</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Cloud &amp; Observability</h3>
+            <div class="chips">
+              <span class="chip">AWS S3</span>
+              <span class="chip">AWS RDS</span>
+              <span class="chip">AWS SNS</span>
+              <span class="chip">Grafana</span>
+              <span class="chip">Elasticsearch</span>
+              <span class="chip">PagerDuty</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Security</h3>
+            <div class="chips">
+              <span class="chip">OAuth 2.0</span>
+              <span class="chip">PKCE</span>
+              <span class="chip">Authorization</span>
+              <span class="chip">Scope-Based Access Control</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Frontend &amp; AI</h3>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">HTML / CSS</span>
+              <span class="chip">AI Agents</span>
+              <span class="chip">LLM Workflows</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title"><span class="muted">//</span> Tooling &amp; Testing</h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">JUnit</span>
+              <span class="chip">Mockito</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WORK EXPERIENCE ============== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="line"><span class="prompt">$</span> <span class="cmd">git log --experience</span></p>
+          <h2 class="section__title"><span class="hash">##</span> Work Experience</h2>
+        </header>
+
+        <div class="grid">
+          <!-- ZOOM -->
+          <article class="card card--project">
+            <div class="card__meta">
+              <span class="badge badge--green">● 3.5+ years</span>
+              <span class="muted">Jul 2022 — Jan 2026</span>
+            </div>
+            <h3 class="card__title">
+              <span class="keyword">role</span>
+              <span class="fn">SoftwareDevelopmentEngineer</span>
+              <span class="muted">@</span>
+              <span class="string">"Zoom Video Communications"</span>
+            </h3>
+            <ul class="list">
+              <li><span class="muted">✓</span> Designed and operated high-availability Zoom Phone APIs and webhooks across distributed microservices with <strong>99.9% availability</strong>.</li>
+              <li><span class="muted">✓</span> Owned core components of Zoom's OAuth 2.0 platform processing <strong>10M+ token requests/day</strong>, improving validation logic and distributed scalability.</li>
+              <li><span class="muted">✓</span> Redesigned and automated OAuth provisioning workflows, reducing turnaround time by <strong>99%+ (days → minutes)</strong>.</li>
+              <li><span class="muted">✓</span> Built a pub-sub pipeline on an internal Kafka-based event streaming platform to automate OAuth scope propagation across services.</li>
+              <li><span class="muted">✓</span> Migrated OAuth scope storage from S3 to MySQL with sub-10ms cached reads, cutting lookup latency by <strong>~90%</strong> via feature-flagged rollout.</li>
+              <li><span class="muted">✓</span> Rebuilt OAuth 2.0 Client Credentials Grant with least-privilege scope validation, preventing over-privileged token issuance.</li>
+              <li><span class="muted">✓</span> Built an internal AI-powered agent for OAuth production troubleshooting — automated log analysis and root-cause summarization.</li>
+              <li><span class="muted">✓</span> Co-developed a full-stack internal API development, testing &amp; debugging platform for Open APIs, saving <strong>$100K+/year</strong> in third-party tooling costs.</li>
+              <li><span class="muted">✓</span> Served as a <em>Security Champion</em> for Marketplace engineering — secure design reviews and engineering best practices.</li>
+              <li><span class="muted">✓</span> Designed observability dashboards, alerts, and SLIs/SLOs to maintain 99.9%+ production availability.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">Java</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">OAuth 2.0</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">AWS S3</span>
+              <span class="chip">Grafana</span>
+              <span class="chip">Elasticsearch</span>
+              <span class="chip">PagerDuty</span>
+              <span class="chip">React</span>
+              <span class="chip">AI Agents</span>
+            </div>
+          </article>
+
+          <!-- AMAZON -->
+          <article class="card card--project">
+            <div class="card__meta">
+              <span class="badge badge--blue">● internship</span>
+              <span class="muted">Jun 2021 — Sep 2021</span>
+            </div>
+            <h3 class="card__title">
+              <span class="keyword">role</span>
+              <span class="fn">SoftwareDevelopmentEngineerIntern</span>
+              <span class="muted">@</span>
+              <span class="string">"Amazon"</span>
+            </h3>
+            <ul class="list">
+              <li><span class="muted">✓</span> Built a modular plugin for Amazon's Item Pipeline Workflow to publish merchant contribution entities through Amazon SNS for downstream consumers.</li>
+              <li><span class="muted">✓</span> Refactored Java services to support more flexible and decoupled workflows.</li>
+              <li><span class="muted">✓</span> Contributed to a high-throughput distributed data processing system with strict latency and reliability constraints.</li>
+            </ul>
+            <div class="chips chips--sm">
+              <span class="chip">Java</span>
+              <span class="chip">Amazon SNS</span>
+              <span class="chip">Distributed Systems</span>
+              <span class="chip">AWS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <p class="line"><span class="prompt">$</span> <span class="cmd">contact --info</span></p>
+          <h2 class="section__title"><span class="hash">##</span> Let's Connect</h2>
+        </header>
+
+        <div class="grid grid--2 grid--contact">
+          <article class="card">
+            <p class="line"><span class="prompt">$</span> <span class="cmd">location --current</span></p>
+            <p class="big">Irvine, CA</p>
+
+            <p class="line mt"><span class="prompt">$</span> <span class="cmd">contact --email</span></p>
+            <p class="big">
+              <a class="link" href="mailto:hungjonathan@gmail.com">hungjonathan@gmail.com</a>
+            </p>
+
+            <p class="line mt"><span class="prompt">$</span> <span class="cmd">cat resume.pdf</span></p>
+            <p>
+              <a class="btn btn--primary" href="assets/resume.pdf" download>
+                <span class="prompt">$</span> download --resume
+              </a>
+            </p>
+
+            <p class="line mt"><span class="prompt">$</span> <span class="cmd">ls ./social-links</span></p>
+            <ul class="socials">
+              <li><a class="link" href="https://github.com/jonachung" target="_blank" rel="noopener">GitHub <span class="muted">@jonachung</span></a></li>
+              <li><a class="link" href="https://www.linkedin.com/in/jonathannhung" target="_blank" rel="noopener">LinkedIn <span class="muted">/in/jonathannhung</span></a></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="line"><span class="prompt">$</span> <span class="cmd">send-message</span></p>
+            <form class="form" id="contact-form" novalidate>
+              <label class="field">
+                <span class="field__label"><span class="prompt">$</span> name:</span>
+                <input type="text" name="name" required autocomplete="name" placeholder="Ada Lovelace" />
+              </label>
+
+              <label class="field">
+                <span class="field__label"><span class="prompt">$</span> email:</span>
+                <input type="email" name="email" required autocomplete="email" placeholder="ada@example.com" />
+              </label>
+
+              <label class="field">
+                <span class="field__label"><span class="prompt">$</span> message:</span>
+                <textarea name="message" rows="5" required placeholder="Type your message…"></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">
+                <span class="fn">SendMessage</span><span class="muted">()</span>
+              </button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">
+        <span class="prompt">$</span> echo <span class="string">"© <span id="year">2026</span> Jonathan Hung. Built with HTML, CSS, JS."</span>
+      </p>
+      <button class="footer__top" aria-label="Back to top">
+        <span class="prompt">$</span> top
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
